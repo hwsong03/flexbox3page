@@ -1,0 +1,149 @@
+/* --- Base Styles --- */
+body {
+    background-color: #e5f4e3;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #4e8d7c;
+}
+
+/* --- Navigation Menu --- */
+
+/* Flexbox to arrange children vertically and center them */
+.menu {
+    background-color: #4e8d7c;
+    padding: 15px 15px 15px 5px;
+    width: 60px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    transition: width 0.3s;
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu:hover {
+    width: 250px;
+}
+
+.navLink {
+    display: block;
+    color: #e5f4e3;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu:hover .navLink {
+    opacity: 1;
+}
+
+/* --- Headers --- */
+
+/* Flexbox to center text content vertically and horizontally */
+.callOutHeader, .noImageHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.callOutHeader {
+    background-image: url('tigercage.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 40px;
+    color: #e5f4e3;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-left: 70px;
+}
+
+.noImageHeader {
+    background-color: #2e6659;
+    padding: 20px;
+    text-align: center;
+    margin-left: 70px;
+    background-image: none;
+}
+
+/* Image in the main content of page02 */
+.headerImage {
+    display: block;
+    margin: 20px auto;
+    max-width: 60%;
+    height: auto;
+}
+
+/* --- Main Content --- */
+
+/* Flexbox for vertical arrangement and even spacing between children */
+.mainContainer {
+    margin-left: 70px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Flexbox for horizontal arrangement and style */
+.subTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 3px solid #4e8d7c;
+    font-weight: bolder;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Flexbox for vertical arrangement and center alignment */
+.stats {
+    background-color: #d8f1de;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Footer --- */
+
+/* Flexbox for vertical and horizontal alignment */
+.footer {
+    margin-top: 40px;
+    color: #2e6659;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d8f1de;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
